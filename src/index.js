@@ -1,12 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './routes';
+import './index.css';
 
 const App = () => {
   return (
-    <div className="">
-      <h1 className="title">FOXBEL Music</h1>
-    </div>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   )
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"))
